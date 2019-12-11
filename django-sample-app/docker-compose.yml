@@ -1,0 +1,9 @@
+version: "3"
+services:
+  test:
+    build: .
+    volumes:
+      - "/home/michael/projects/doco.el/django-sample-app/src:/opt/project:rw"
+    ports:
+      - "8000:8000"
+    working_dir: "/opt/project"
